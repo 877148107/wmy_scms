@@ -1,4 +1,4 @@
-package com.wmy.scms;
+package com.wmy.scms.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 

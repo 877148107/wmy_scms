@@ -1,6 +1,6 @@
 package com.wmy.scms.config;
 
-import com.wmy.scms.LoginHandlerInterceptor;
+import com.wmy.scms.interceptor.LoginHandlerInterceptor;
 import com.wmy.scms.comment.MyLocaleResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -44,7 +44,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
-                .excludePathPatterns("/index.html","/","/user/login");
+//        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
+//                .excludePathPatterns("/index.html","/","/user/login");
     }
 }
